@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YouTube Loop Player</title>
+  <meta name="description" content="Riproduci un video YouTube in loop continuo." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <section class="hero">
+      <h1>YouTube Loop Player</h1>
+      <p>Incolla un link YouTube o un ID video e avvia la riproduzione continua.</p>
+
+      <div class="form">
+        <input id="videoInput" type="text" placeholder="Es. https://www.youtube.com/watch?v=dQw4w9WgXcQ" />
+        <button id="playButton">Riproduci in loop</button>
+      </div>
+
+      <p id="error" class="error"></p>
+    </section>
+
+    <section class="player-card" id="playerCard">
+      <div id="player" class="player-placeholder">
+        Il video comparirà qui.
+      </div>
+    </section>
+
+    <section class="info">
+      <h2>Come funziona</h2>
+      <p>
+        La piattaforma usa l’embed ufficiale di YouTube. Per il loop di un singolo video,
+        viene aggiunto anche il parametro playlist con lo stesso ID del video.
+      </p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

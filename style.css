@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #101827;
+  color: #f7f7f7;
+}
+
+.app {
+  width: min(1000px, 92%);
+  margin: 0 auto;
+  padding: 48px 0;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+h1 {
+  font-size: clamp(2rem, 6vw, 4rem);
+  margin: 0 0 12px;
+}
+
+.hero p {
+  color: #cbd5e1;
+  font-size: 1.1rem;
+}
+
+.form {
+  margin: 28px auto 8px;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+input {
+  width: min(620px, 100%);
+  padding: 14px 16px;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  background: #0f172a;
+  color: #fff;
+  font-size: 1rem;
+}
+
+button {
+  padding: 14px 18px;
+  border: 0;
+  border-radius: 12px;
+  background: #38bdf8;
+  color: #082f49;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  filter: brightness(1.08);
+}
+
+.error {
+  color: #fca5a5;
+  min-height: 24px;
+}
+
+.player-card {
+  background: #0f172a;
+  border: 1px solid #263449;
+  border-radius: 20px;
+  padding: 14px;
+  box-shadow: 0 20px 60px rgba(0,0,0,.35);
+}
+
+.player-placeholder {
+  aspect-ratio: 16 / 9;
+  display: grid;
+  place-items: center;
+  color: #94a3b8;
+  border: 1px dashed #334155;
+  border-radius: 14px;
+}
+
+iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  border-radius: 14px;
+  display: block;
+}
+
+.info {
+  margin-top: 28px;
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+
+@media (max-width: 700px) {
+  .form {
+    flex-direction: column;
+  }
+
+  button {
+    width: 100%;
+  }
+}
